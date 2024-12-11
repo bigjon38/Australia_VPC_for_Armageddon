@@ -1,12 +1,12 @@
 Armageddon Project: Australia VPC Contribution
-	This repository contains the Terraform configuration files for the California VPC Module, a component of the global Armageddon Project. This initiative supports the deployment of the J-Tele-Doctor application for Tokyo 		Midtown Medical Center (TMMC), ensuring scalable, secure, and compliant infrastructure in the California region.
+	This repository contains the Terraform configuration files for the California VPC Module, a component of the global Armageddon Project. This initiative supports the deployment of the J-Tele-Doctor application for Tokyo 	Midtown Medical Center (TMMC), ensuring scalable, secure, and compliant infrastructure in the Australia region.
 
 Project Overview
-	The Armageddon Project aims to expand telemedicine services for Japanese and international customers by deploying robust, secure application hosting across global AWS regions. The California VPC Module specifically 				supports the application hosting requirements in the California region, ensuring compliance with project-specific guidelines.
+	The Armageddon Project aims to expand telemedicine services for Japanese and international customers by deploying robust, secure application hosting across global AWS regions. The California VPC Module specifically supports the application hosting requirements in the Australia region, ensuring compliance with project-specific guidelines.
 
 Features of the California VPC Module
 	Networking
-		VPC CIDR Block: 10.106.0.0/16 (65,536 IP addresses for future scalability)
+		VPC CIDR Block: 10.104.0.0/16 (65,536 IP addresses for future scalability)
 		Subnets:
 			Public:
 				10.104.1.0/24 (AZ 1) (ap-southeast-2a)
@@ -40,12 +40,12 @@ Features of the California VPC Module
 		VPC ID and Subnet IDs
 		Load Balancer DNS for Application Access
 	Compliance and Benefits
-				Requirement																			Australia VPC Contribution
+				Requirement								Australia VPC Contribution
 		Deploy ASG with a minimum of 2 AZs						Configured ASG spans two AZs with redundancy.
-		Deploy at least 1 EC2 for testing							Includes one t2.micro instance for testing.
-		Transfer syslog data securely									Isolated syslog data in private subnets, ready for transfer.
-		Open only Port 80															Security groups restrict public access to Port 80.
-		Store syslog data in private subnets					Ensures compliance with data privacy requirements.
+		Deploy at least 1 EC2 for testing						Includes one t2.micro instance for testing.
+		Transfer syslog data securely							Isolated syslog data in private subnets, ready for transfer.
+		Open only Port 80								Security groups restrict public access to Port 80.
+		Store syslog data in private subnets						Ensures compliance with data privacy requirements.
 	Value Proposition
 		The California VPC Module delivers:
 			Fault Tolerance: Multi-AZ deployment.
